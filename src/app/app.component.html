@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<button (click)="click()" type="button">点击</button>
+<quill-editor id="editor" [(ngModel)]="editorContent"></quill-editor>
+<div class="ql-container ql-snow" style="border-width: 0;">
+  <div class="ql-editor" [innerHTML]="editorContent"></div>
+</div>
